@@ -1,0 +1,31 @@
+{
+  "groups": [
+    {
+      "name": "qhkt.auth.resource",
+      "type": "com.qhkt.authsdk.resource.config.ResourceInterceptorConfiguration",
+      "sourceType": "com.qhkt.authsdk.resource.config.ResourceAuthProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "qhkt.auth.resource.enable",
+      "type": "java.lang.Boolean",
+      "description": "是否开启登录拦截功能，如果开启则需要指定拦截路径，默认拦截所有",
+      "sourceType": "com.qhkt.authsdk.resource.config.ResourceAuthProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "qhkt.auth.resource.includeLoginPaths",
+      "type": "java.util.List",
+      "description": "要拦截的路径，例如：/user/**",
+      "sourceType": "com.qhkt.authsdk.resource.config.ResourceAuthProperties"
+    },
+    {
+      "name": "qhkt.auth.resource.excludeLoginPaths",
+      "type": "java.util.List",
+      "description": "不拦截的路径，例如：/user/**",
+      "sourceType": "com.qhkt.authsdk.resource.config.ResourceAuthProperties"
+    }
+  ],
+  "hints": []
+}

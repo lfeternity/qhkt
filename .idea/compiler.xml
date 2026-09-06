@@ -6,57 +6,57 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="tj-message-api" />
-        <module name="tj-gateway" />
-        <module name="tj-user" />
-        <module name="tj-auth-resource-sdk" />
-        <module name="tj-course" />
-        <module name="tj-exam" />
-        <module name="tj-pay-domain" />
-        <module name="tj-auth-service" />
-        <module name="tj-search" />
-        <module name="tj-message-service" />
-        <module name="tj-pay-api" />
-        <module name="tj-learning" />
-        <module name="tj-trade" />
-        <module name="tj-common" />
-        <module name="tj-pay-service" />
-        <module name="tj-remark" />
-        <module name="tj-auth-gateway-sdk" />
-        <module name="tj-message-domain" />
-        <module name="tj-promotion" />
-        <module name="tj-media" />
-        <module name="tj-data" />
-        <module name="tj-api" />
-        <module name="tj-auth-common" />
+        <module name="qhkt-message-api" />
+        <module name="qhkt-gateway" />
+        <module name="qhkt-user" />
+        <module name="qhkt-auth-resource-sdk" />
+        <module name="qhkt-course" />
+        <module name="qhkt-exam" />
+        <module name="qhkt-pay-domain" />
+        <module name="qhkt-auth-service" />
+        <module name="qhkt-search" />
+        <module name="qhkt-message-service" />
+        <module name="qhkt-pay-api" />
+        <module name="qhkt-learning" />
+        <module name="qhkt-trade" />
+        <module name="qhkt-common" />
+        <module name="qhkt-pay-service" />
+        <module name="qhkt-remark" />
+        <module name="qhkt-auth-gateway-sdk" />
+        <module name="qhkt-message-domain" />
+        <module name="qhkt-promotion" />
+        <module name="qhkt-media" />
+        <module name="qhkt-data" />
+        <module name="qhkt-api" />
+        <module name="qhkt-auth-common" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="tj-api" options="-parameters" />
-      <module name="tj-auth-common" options="-parameters" />
-      <module name="tj-auth-gateway-sdk" options="-parameters" />
-      <module name="tj-auth-resource-sdk" options="-parameters" />
-      <module name="tj-auth-service" options="-parameters" />
-      <module name="tj-common" options="-parameters" />
-      <module name="tj-course" options="-parameters" />
-      <module name="tj-data" options="-parameters" />
-      <module name="tj-exam" options="-parameters" />
-      <module name="tj-gateway" options="-parameters" />
-      <module name="tj-learning" options="-parameters" />
-      <module name="tj-media" options="-parameters" />
-      <module name="tj-message-api" options="-parameters" />
-      <module name="tj-message-domain" options="-parameters" />
-      <module name="tj-message-service" options="-parameters" />
-      <module name="tj-pay-api" options="-parameters" />
-      <module name="tj-pay-domain" options="-parameters" />
-      <module name="tj-pay-service" options="-parameters" />
-      <module name="tj-promotion" options="-parameters" />
-      <module name="tj-remark" options="-parameters" />
-      <module name="tj-search" options="-parameters" />
-      <module name="tj-trade" options="-parameters" />
-      <module name="tj-user" options="-parameters" />
+      <module name="qhkt-api" options="-parameters" />
+      <module name="qhkt-auth-common" options="-parameters" />
+      <module name="qhkt-auth-gateway-sdk" options="-parameters" />
+      <module name="qhkt-auth-resource-sdk" options="-parameters" />
+      <module name="qhkt-auth-service" options="-parameters" />
+      <module name="qhkt-common" options="-parameters" />
+      <module name="qhkt-course" options="-parameters" />
+      <module name="qhkt-data" options="-parameters" />
+      <module name="qhkt-exam" options="-parameters" />
+      <module name="qhkt-gateway" options="-parameters" />
+      <module name="qhkt-learning" options="-parameters" />
+      <module name="qhkt-media" options="-parameters" />
+      <module name="qhkt-message-api" options="-parameters" />
+      <module name="qhkt-message-domain" options="-parameters" />
+      <module name="qhkt-message-service" options="-parameters" />
+      <module name="qhkt-pay-api" options="-parameters" />
+      <module name="qhkt-pay-domain" options="-parameters" />
+      <module name="qhkt-pay-service" options="-parameters" />
+      <module name="qhkt-promotion" options="-parameters" />
+      <module name="qhkt-remark" options="-parameters" />
+      <module name="qhkt-search" options="-parameters" />
+      <module name="qhkt-trade" options="-parameters" />
+      <module name="qhkt-user" options="-parameters" />
     </option>
   </component>
 </project>

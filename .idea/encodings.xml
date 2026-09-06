@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/tianji/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-auth/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-auth/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-auth/tj-auth-common/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-auth/tj-auth-gateway-sdk/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-auth/tj-auth-resource-sdk/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-auth/tj-auth-service/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-common/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-course/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-data/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-exam/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-gateway/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-learning/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-media/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-message/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-message/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-message/tj-message-api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-message/tj-message-domain/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-message/tj-message-service/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-pay/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-pay/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-pay/tj-pay-api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-pay/tj-pay-domain/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-pay/tj-pay-service/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-promotion/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-remark/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-search/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-trade/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tianji/tj-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-auth/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-auth/qhkt-auth-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-auth/qhkt-auth-gateway-sdk/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-auth/qhkt-auth-resource-sdk/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-auth/qhkt-auth-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-course/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-data/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-exam/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-learning/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-media/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-message/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-message/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-message/qhkt-message-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-message/qhkt-message-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-message/qhkt-message-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-pay/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-pay/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-pay/qhkt-pay-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-pay/qhkt-pay-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-pay/qhkt-pay-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-promotion/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-remark/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-search/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-trade/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qhkt/qhkt-user/src/main/java" charset="UTF-8" />
   </component>
 </project>

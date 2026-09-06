@@ -1,0 +1,79 @@
+version: "3.8"
+
+services:
+  qhkt-agent-python:
+    build: .
+    environment:
+      APP_ENV: integration
+      DATABASE_URL: mysql+asyncmy://agent:agent@mysql:3306/qhkt_agent
+      DB_AUTO_CREATE: "false"
+      MOCK_BUSINESS_MODE: "true"
+      REDIS_URL: redis://redis:6379/0
+      REDIS_MEMORY_ENABLED: "true"
+      QDRANT_ENABLED: "true"
+      QDRANT_URL: http://qdrant:6333
+      QDRANT_COLLECTION: course_knowledge_test
+      EMBEDDING_PROVIDER: LOCAL_HASH
+      RABBITMQ_URL: amqp://agent:agent@rabbitmq:5672/
+      MQ_ENABLED: "true"
+    command: ["sh", "-c", "alembic upgrade head && exec uvicorn app.main:app --host 0.0.0.0 --port 8094"]
+    ports:
+      - "8094:8094"
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      qdrant:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: qhkt_agent
+      MYSQL_USER: agent
+      MYSQL_PASSWORD: agent
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3307:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uagent", "-pagent"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6380:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  qdrant:
+    image: qdrant/qdrant:v1.12.4
+    ports:
+      - "6334:6333"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:6333/readyz"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  rabbitmq:
+    image: rabbitmq:3.13-management
+    environment:
+      RABBITMQ_DEFAULT_USER: agent
+      RABBITMQ_DEFAULT_PASS: agent
+    ports:
+      - "5673:5672"
+      - "15673:15672"
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 20

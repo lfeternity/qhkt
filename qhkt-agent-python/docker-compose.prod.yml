@@ -1,0 +1,55 @@
+version: "3.8"
+
+services:
+  qhkt-agent-python:
+    build:
+      context: .
+      args:
+        PYTHON_BASE_IMAGE: ${PYTHON_BASE_IMAGE:-docker.m.daocloud.io/library/python:3.12-slim}
+        PIP_INDEX_URL: ${PIP_INDEX_URL:-https://pypi.tuna.tsinghua.edu.cn/simple}
+    image: qhkt-agent-python:latest
+    container_name: qhkt-agent-python
+    restart: unless-stopped
+    env_file:
+      - .env.production
+    secrets:
+      - ai_api_key
+      - database_url
+      - redis_password
+      - rabbitmq_url
+      - embedding_api_key
+      - langsmith_api_key
+      - qdrant_api_key
+    command: ["sh", "-c", "alembic upgrade head && exec uvicorn app.main:app --host 0.0.0.0 --port 8094"]
+    ports:
+      - "8094:8094"
+    networks:
+      - heima-net
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8094/actuator/health', timeout=3)"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    mem_limit: 768m
+    init: true
+
+networks:
+  heima-net:
+    external: true
+
+secrets:
+  ai_api_key:
+    file: ./secrets/ai_api_key
+  database_url:
+    file: ./secrets/database_url
+  redis_password:
+    file: ./secrets/redis_password
+  rabbitmq_url:
+    file: ./secrets/rabbitmq_url
+  embedding_api_key:
+    file: ./secrets/embedding_api_key
+  langsmith_api_key:
+    file: ./secrets/langsmith_api_key
+  qdrant_api_key:
+    file: ./secrets/qdrant_api_key

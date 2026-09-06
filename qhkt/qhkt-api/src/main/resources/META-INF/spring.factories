@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.qhkt.api.config.RequestIdRelayConfiguration, \
+  com.qhkt.api.config.RoleCacheConfig, \
+  com.qhkt.api.config.FallbackConfig, \
+  com.qhkt.api.config.CategoryCacheConfig

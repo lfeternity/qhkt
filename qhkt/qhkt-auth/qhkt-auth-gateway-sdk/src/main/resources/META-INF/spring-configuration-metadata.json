@@ -1,0 +1,19 @@
+{
+  "groups": [
+    {
+      "name": "qhkt.auth.gateway",
+      "type": "com.qhkt.authsdk.gateway.config.AuthAutoConfiguration",
+      "sourceType": "com.qhkt.authsdk.gateway.config.AuthProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "qhkt.auth.excludePath",
+      "type": "java.util.Set",
+      "description": "不用登录就能访问的路径，ant风格通配符",
+      "sourceType": "com.qhkt.authsdk.gateway.config.AuthProperties",
+      "defaultValue": ""
+    }
+  ],
+  "hints": []
+}
